@@ -66,7 +66,7 @@ export default function ProjectsWithSwiper() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <section className={`min-h-screen py-24 px-6 ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
+    <section id="projects" className={`min-h-screen py-24 px-6 ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
       <div className="container mx-auto px-6 lg:px-16">
         
         <header className="flex justify-between mb-16">

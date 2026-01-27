@@ -1,16 +1,14 @@
 export  const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
+    title: "Crypto Website Landingpage",
+    description: "Frontend",
+    tags: ["Next.js","Tailwindcss"],
     images: [
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=1200&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80"
+      "/assets/Crypto.jpeg",
+  
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+
     github: "https://github.com/yourusername/ecommerce-platform",
     demo: "https://demo.yoursite.com",
     review: {
@@ -25,15 +23,14 @@ export  const projectsData = [
   },
   {
     id: 2,
-    title: "AI Content Generator",
-    description: "Machine learning powered content generation tool with natural language processing capabilities.",
-    tags: ["Python", "TensorFlow", "React", "FastAPI"],
+    title: "Hosting Platform",
+    description: "Frontend",
+      tags: ["Next.js","Tailwindcss"],
     images: [
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80",
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80",
-      "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=1200&q=80"
+         "/assets/verito.png",
+           "/assets/fullverito.png",
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  
     github: "https://github.com/yourusername/ai-content-generator",
     review: {
       clientName: "Michael Chen",
@@ -47,14 +44,185 @@ export  const projectsData = [
   },
   {
     id: 3,
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates, kanban boards, and team analytics.",
-    tags: ["Vue.js", "Node.js", "MongoDB", "Socket.io"],
+    title: "Everyone Website",
+    description: "Frontend + Integration",
+    tags: ["Nextjs,Tailwindcss","Axios"],
     images: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1200&q=80"
+      "/assets/everyone2.png",
+      "/assets/every.png",
+         "/assets/everyone9.png",
+            "/assets/everyone3.png",
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  
+    github: "https://github.com/yourusername/task-manager",
+    demo: "https://tasks.yoursite.com",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+   {
+    id: 4,
+    title: "Capital Expand",
+    description: "Frontend + Integration + backend",
+    tags: ["Nextjs,Tailwindcss","Axios","Nodejs"],
+    images: [
+      "/assets/capital.png",
+      "/assets/capitalXpand.jpeg",
+         "/assets/capital2.jpg",
+           "/assets/cx.jpeg",
+       
+    ],
+  
+    github: "https://github.com/yourusername/task-manager",
+    demo: "https://tasks.yoursite.com",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+     {
+    id: 5,
+    title: "Nft Club",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+      "/assets/club.jpeg",
+ 
+       
+    ],
+    videoUrl:       "/assets/club.webm",
+    github: "https://github.com/yourusername/task-manager",
+    demo: "https://tasks.yoursite.com",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+       {
+    id: 5,
+    title: "GitWaiting",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+      "/assets/gitWaiting.jpeg",
+ 
+       
+    ],
+    videoUrl:"/assets/gitwaiting.webm",
+    github: "https://github.com/yourusername/task-manager",
+    demo: "/assets/gitwaiting.webm",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+       {
+    id: 6,
+    title: "Nft Blockchain",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+      "/assets/nft.jpeg",
+ 
+       
+    ],
+    videoUrl: "/assets/nft.webm",
+    github: "https://github.com/yourusername/task-manager",
+    demo: "/assets/nft.webm",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+       {
+    id: 7,
+    title: "P33R",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+        "/assets/p33r2.png",
+      "/assets/P33R.png",
+
+ 
+       
+    ],
+   
+    github: "https://github.com/yourusername/task-manager",
+    demo: "https://tasks.yoursite.com",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 4.5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+       {
+    id: 8,
+    title: "MegaEvolution",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+        "/assets/img2.jpeg",
+      "/assets/main.jpeg",
+
+ 
+       
+    ],
+    videoUrl:       "/assets/mega.webm",
+    github: "https://github.com/yourusername/task-manager",
+    demo: "/assets/mega.webm",
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 4.5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+        {
+    id: 9,
+    title: "Admin Panel",
+    description: "Frontend+integration",
+    tags: ["Nextjs,Tailwindcss","Axios"],
+    images: [
+        "/assets/dashboard.png",
+      "/assets/dasg2.png",
+
+ 
+       
+    ],
+
     github: "https://github.com/yourusername/task-manager",
     demo: "https://tasks.yoursite.com",
     review: {

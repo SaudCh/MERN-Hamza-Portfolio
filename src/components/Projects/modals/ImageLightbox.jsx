@@ -11,6 +11,7 @@ export default function ImageLightbox({ isOpen, onClose, images, initialIndex })
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm p-4"
       onClick={onClose}
     >
+        
       <button onClick={onClose} className="absolute top-6 right-6 p-3 bg-white/10 text-white rounded-full">
         <X />
       </button>
@@ -19,12 +20,12 @@ export default function ImageLightbox({ isOpen, onClose, images, initialIndex })
         <>
           <button onClick={(e) => { e.stopPropagation(); setCurrentIndex((i) => (i - 1 + images.length) % images.length); }}
             className="absolute left-6 p-3 bg-white/10 text-white rounded-full">
-            <ChevronLeft />
+            <ChevronLeft className="!w-3 !h-3" />
           </button>
 
           <button onClick={(e) => { e.stopPropagation(); setCurrentIndex((i) => (i + 1) % images.length); }}
             className="absolute right-6 p-3 bg-white/10 text-white rounded-full">
-            <ChevronRight />
+            <ChevronRight className="!w-3 !h-3"/>
           </button>
         </>
       )}

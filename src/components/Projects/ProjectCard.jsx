@@ -40,7 +40,53 @@ export default function ProjectCard({ project, isDarkMode }) {
             : 'bg-white border-gray-200 hover:border-gray-300 shadow-lg hover:shadow-xl'
         }`}
       >
+           <style jsx global>{`
+        .project-swiper .swiper-button-next,
+        .project-swiper .swiper-button-prev {
+          color: #000000;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(8px);
+          width: 36px;
+          height: 36px;
+          padding: 6px;
+          border-radius: 50%;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          transition: all 0.3s ease;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
         
+        .project-swiper:hover .swiper-button-next,
+        .project-swiper:hover .swiper-button-prev {
+          opacity: 1;
+        }
+        
+        .project-swiper .swiper-button-next:after,
+        .project-swiper .swiper-button-prev:after {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        
+        .project-swiper .swiper-button-next:hover,
+        .project-swiper .swiper-button-prev:hover {
+          background: rgba(255, 255, 255, 1);
+          transform: scale(1.1);
+        }
+        
+        .project-swiper .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.4;
+        }
+        
+        .project-swiper .swiper-pagination-bullet-active {
+          opacity: 1;
+          background: white;
+        }
+        
+        .project-swiper .swiper-pagination {
+          bottom: 12px;
+        }
+      `}</style> 
         {/* Image Section with Swiper */}
         <div className={`relative aspect-video overflow-hidden ${isDarkMode ? 'bg-zinc-900' : 'bg-gray-100'}`}>
           {/* Image Count Badge */}
@@ -60,8 +106,8 @@ export default function ProjectCard({ project, isDarkMode }) {
               }`}
               aria-label="Play demo video"
             >
-              <Play className="w-4 h-4" fill="currentColor" />
-              <span className="text-sm font-medium">Video</span>
+              {/* <Play className="w-4 h-4" fill="currentColor" /> */}
+              <span className="text-sm font-medium">Website</span>
             </button>
           )}
 
