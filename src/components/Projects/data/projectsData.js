@@ -32,6 +32,7 @@ export  const projectsData = [
     ],
   
     github: "https://github.com/yourusername/ai-content-generator",
+       demo: "verito.com",
     review: {
       clientName: "Michael Chen",
       clientRole: "Marketing Director, ContentPro",
@@ -55,7 +56,7 @@ export  const projectsData = [
     ],
   
     github: "https://github.com/yourusername/task-manager",
-    demo: "https://tasks.yoursite.com",
+    demo: "everyone.world",
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -80,7 +81,7 @@ export  const projectsData = [
     ],
   
     github: "https://github.com/yourusername/task-manager",
-    demo: "https://tasks.yoursite.com",
+ 
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -101,9 +102,9 @@ export  const projectsData = [
  
        
     ],
-    videoUrl:       "/assets/club.webm",
+    videoUrl:       "/assets/club.mp4",
     github: "https://github.com/yourusername/task-manager",
-    demo: "https://tasks.yoursite.com",
+
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -126,7 +127,7 @@ export  const projectsData = [
     ],
     videoUrl:"/assets/gitwaiting.webm",
     github: "https://github.com/yourusername/task-manager",
-    demo: "/assets/gitwaiting.webm",
+
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -149,7 +150,7 @@ export  const projectsData = [
     ],
     videoUrl: "/assets/nft.webm",
     github: "https://github.com/yourusername/task-manager",
-    demo: "/assets/nft.webm",
+ 
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -174,7 +175,7 @@ export  const projectsData = [
     ],
    
     github: "https://github.com/yourusername/task-manager",
-    demo: "https://tasks.yoursite.com",
+
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
@@ -199,7 +200,57 @@ export  const projectsData = [
     ],
     videoUrl:       "/assets/mega.webm",
     github: "https://github.com/yourusername/task-manager",
-    demo: "/assets/mega.webm",
+ 
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 4.5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+        {
+    id: 9,
+    title: "Admin Panel",
+    description: "Frontend+integration",
+    tags: ["Nextjs,Tailwindcss","Axios"],
+    images: [
+        "/assets/dashboard.png",
+      "/assets/dasg2.png",
+
+ 
+       
+    ],
+
+    github: "https://github.com/yourusername/task-manager",
+
+    review: {
+      clientName: "Emily Rodriguez",
+      clientRole: "Project Manager, DevTeam Co",
+      clientImage: "https://i.pravatar.cc/150?img=9",
+      rating: 4.5,
+      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+      projectDuration: "2 months",
+      completedDate: "January 2025"
+    }
+  },
+   {
+    id: 9,
+    title: "Profile Page",
+    description: "Frontend",
+    tags: ["Nextjs,Tailwindcss"],
+    images: [
+        "/assets/profile.png",
+ 
+
+ 
+       
+    ],
+    videoUrl:       "/assets/profile.mp4",
+    github: "https://github.com/yourusername/task-manager",
+
     review: {
       clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",

@@ -37,7 +37,7 @@ const About = () => {
             </div>
 
             {/* Bio */}
-            <div className="space-y-6 text-stone-600">
+            <div className="space-y-6 text-stone-800">
               <p className="text-lg leading-relaxed">
                 Crafting digital experiences for <span className="text-stone-900 font-semibold">2+ years</span>. 
                 I transform ambitious ideas into production-ready web applications using the MERN stack, 
@@ -61,7 +61,7 @@ const About = () => {
               ].map((principle, i) => (
                 <div 
                   key={i}
-                  className="group flex items-center gap-3 font-mono text-sm text-stone-500 transition-colors hover:text-emerald-700"
+                  className="group flex items-center gap-3 font-mono text-sm text-stone-700 transition-colors hover:text-emerald-700"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
                   <span className="text-emerald-600/60 transition-colors group-hover:text-emerald-700">→</span>
