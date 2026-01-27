@@ -70,7 +70,7 @@ export default function ProjectsWithSwiper() {
       <div className="container mx-auto px-6 lg:px-16">
         
         <header className="flex justify-between mb-16">
-          <h2 className={`text-4xl md:text-6xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+          <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
             Featured Projects
           </h2>
  <button
