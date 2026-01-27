@@ -1,6 +1,7 @@
 import LocationIcon from '../icons/LocationIcon';
 import MailIcon from '../icons/MailIcon';
 import UserIcon from '../icons/UserIcon';
+import PhoneIcon from '../icons/PhoneIcon';
 import Form from './Form';
 
 const Contact = () => {
@@ -30,7 +31,11 @@ const Contact = () => {
           </div>
           <div className="flex items-center gap-3">
             <MailIcon className="text-primary h-7 w-7" />
-            <p className="text-lg text-gray-700">hamzashahbaz506@gmail.com</p>
+            <p className="text-lg text-gray-700">hamzashahbaz1947@gmail.com</p>
+          </div>
+             <div className="flex items-center gap-3">
+            <PhoneIcon className="text-primary h-7 w-7" />
+            <p className="text-lg text-gray-700">03068398888</p>
           </div>
         </div>
       </div>

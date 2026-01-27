@@ -16,7 +16,7 @@ const Header = ({ bannerRef }) => {
 
   return (
     <header
-      className={`fixed top-0 z-[1020] w-full bg-gradient-to-b backdrop-blur-sm  ${
+      className={`fixed top-0 z-20 w-full bg-gradient-to-b backdrop-blur-sm  ${
         scrollHeight > bannerRef?.current?.clientHeight
           ? 'from-gray-100/30 to-gray-100/0 text-gray-900'
           : 'from-gray-900/30 to-gray-900/0 text-gray-100'
