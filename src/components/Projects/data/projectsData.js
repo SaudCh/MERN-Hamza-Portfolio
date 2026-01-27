@@ -242,7 +242,7 @@ export  const projectsData = [
     description: "Frontend",
     tags: ["Nextjs,Tailwindcss"],
     images: [
-        "/assets/profile.png",
+        "/assets/profile.jpeg",
  
 
  
