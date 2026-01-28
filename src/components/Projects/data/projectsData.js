@@ -10,9 +10,9 @@ export  const projectsData = [
     ],
 
     github: "https://github.com/yourusername/ecommerce-platform",
-    demo: "https://demo.yoursite.com",
+    // demo: "https://demo.yoursite.com",
     review: {
-      clientName: "Sarah Johnson",
+      // clientName: "Sarah Johnson",
       clientRole: "CEO, TechMart Inc",
       clientImage: "https://i.pravatar.cc/150?img=5",
       rating: 5,
@@ -32,9 +32,9 @@ export  const projectsData = [
     ],
   
     github: "https://github.com/yourusername/ai-content-generator",
-       demo: "verito.com",
+       demo: "https://www.verito.com",
     review: {
-      clientName: "Michael Chen",
+      // clientName: "Michael Chen",
       clientRole: "Marketing Director, ContentPro",
       clientImage: "https://i.pravatar.cc/150?img=12",
       rating: 5,
@@ -47,7 +47,7 @@ export  const projectsData = [
     id: 3,
     title: "Everyone Website",
     description: "Frontend + Integration",
-    tags: ["Nextjs,Tailwindcss","Axios"],
+    tags: ["Nextjs","Tailwindcss","Axios"],
     images: [
       "/assets/everyone2.png",
       "/assets/every.png",
@@ -55,10 +55,10 @@ export  const projectsData = [
             "/assets/everyone3.png",
     ],
   
-    github: "https://github.com/yourusername/task-manager",
-    demo: "everyone.world",
+    github: "https://github.com/hamzaDev1947",
+    demo: "https://www.everyone.world",
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 5,
@@ -71,7 +71,7 @@ export  const projectsData = [
     id: 4,
     title: "Capital Expand",
     description: "Frontend + Integration + backend",
-    tags: ["Nextjs,Tailwindcss","Axios","Nodejs"],
+    tags: ["Nextjs","Tailwindcss","Axios","Nodejs"],
     images: [
       "/assets/capital.png",
       "/assets/capitalXpand.jpeg",
@@ -83,7 +83,7 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
  
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 5,
@@ -96,7 +96,7 @@ export  const projectsData = [
     id: 5,
     title: "Nft Club",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
       "/assets/club.jpeg",
  
@@ -106,7 +106,7 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
 
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 5,
@@ -119,7 +119,7 @@ export  const projectsData = [
     id: 5,
     title: "GitWaiting",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
       "/assets/gitWaiting.jpeg",
  
@@ -129,7 +129,7 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
 
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 5,
@@ -142,7 +142,7 @@ export  const projectsData = [
     id: 6,
     title: "Nft Blockchain",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
       "/assets/nft.jpeg",
  
@@ -152,7 +152,7 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
  
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 5,
@@ -165,7 +165,7 @@ export  const projectsData = [
     id: 7,
     title: "P33R",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
         "/assets/p33r2.png",
       "/assets/P33R.png",
@@ -177,7 +177,7 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
 
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
       rating: 4.5,
@@ -190,7 +190,7 @@ export  const projectsData = [
     id: 8,
     title: "MegaEvolution",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
         "/assets/img2.jpeg",
       "/assets/main.jpeg",
@@ -202,10 +202,10 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
  
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
-      rating: 4.5,
+      rating: 5,
       comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
       projectDuration: "2 months",
       completedDate: "January 2025"
@@ -215,7 +215,7 @@ export  const projectsData = [
     id: 9,
     title: "Admin Panel",
     description: "Frontend+integration",
-    tags: ["Nextjs,Tailwindcss","Axios"],
+    tags: ["Nextjs","Tailwindcss","Axios"],
     images: [
         "/assets/dashboard.png",
       "/assets/dasg2.png",
@@ -227,10 +227,10 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
 
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
-      rating: 4.5,
+      rating: 5,
       comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
       projectDuration: "2 months",
       completedDate: "January 2025"
@@ -240,7 +240,7 @@ export  const projectsData = [
     id: 9,
     title: "Profile Page",
     description: "Frontend",
-    tags: ["Nextjs,Tailwindcss"],
+    tags: ["Nextjs","Tailwindcss"],
     images: [
         "/assets/profile.jpeg",
  
@@ -252,38 +252,38 @@ export  const projectsData = [
     github: "https://github.com/yourusername/task-manager",
 
     review: {
-      clientName: "Emily Rodriguez",
+      // clientName: "Emily Rodriguez",
       clientRole: "Project Manager, DevTeam Co",
       clientImage: "https://i.pravatar.cc/150?img=9",
-      rating: 4.5,
+      rating: 5,
       comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
       projectDuration: "2 months",
       completedDate: "January 2025"
     }
   },
-        {
-    id: 9,
-    title: "Admin Panel",
-    description: "Frontend+integration",
-    tags: ["Nextjs,Tailwindcss","Axios"],
-    images: [
-        "/assets/dashboard.png",
-      "/assets/dasg2.png",
+  //       {
+  //   id: 9,
+  //   title: "Admin Panel",
+  //   description: "Frontend+integration",
+  //   tags: ["Nextjs,Tailwindcss","Axios"],
+  //   images: [
+  //       "/assets/dashboard.png",
+  //     "/assets/dasg2.png",
 
  
        
-    ],
+  //   ],
 
-    github: "https://github.com/yourusername/task-manager",
-    demo: "https://tasks.yoursite.com",
-    review: {
-      clientName: "Emily Rodriguez",
-      clientRole: "Project Manager, DevTeam Co",
-      clientImage: "https://i.pravatar.cc/150?img=9",
-      rating: 4.5,
-      comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
-      projectDuration: "2 months",
-      completedDate: "January 2025"
-    }
-  }
+  //   github: "https://github.com/yourusername/task-manager",
+  //   demo: "https://tasks.yoursite.com",
+  //   review: {
+  //     // clientName: "Emily Rodriguez",
+  //     clientRole: "Project Manager, DevTeam Co",
+  //     clientImage: "https://i.pravatar.cc/150?img=9",
+  //     rating: 5,
+  //     comment: "Great project management solution! The real-time collaboration features work flawlessly. Minor UI suggestions were quickly addressed. Would definitely work with this developer again.",
+  //     projectDuration: "2 months",
+  //     completedDate: "January 2025"
+  //   }
+  // }
 ];;

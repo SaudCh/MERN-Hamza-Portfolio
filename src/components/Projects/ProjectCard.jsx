@@ -19,12 +19,14 @@ import 'swiper/css/pagination';
 import ImageLightbox from './modals/ImageLightbox';
 import VideoModal from './modals/VideoModal';
 import ReviewModal from './modals/ReviewModal';
+import { PrivateCodePopup } from './Popup';
 
 export default function ProjectCard({ project, isDarkMode }) {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+const [showPrivateCodePopup, setShowPrivateCodePopup] = useState(false);
 
   const openLightbox = (index) => {
     setLightboxIndex(index);
@@ -187,25 +189,24 @@ export default function ProjectCard({ project, isDarkMode }) {
                 ))}
               </div>
               <span className="text-sm font-medium">{project.review.rating}</span>
-              <span className="text-sm">• {project.review.clientName}</span>
+              {/* <span className="text-sm">• {project.review.clientName}</span> */}
             </div>
           )}
 
           {/* Links */}
           <div className="flex flex-wrap gap-3 pt-2">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors font-medium text-sm border ${
-                isDarkMode 
-                  ? 'bg-zinc-800 hover:bg-zinc-700 text-white border-zinc-700/50 hover:border-zinc-600' 
-                  : 'bg-gray-100 hover:bg-gray-200 text-gray-900 border-gray-200'
-              }`}
-            >
-              <Github className="w-4 h-4" />
-              <span>Code</span>
-            </a>
+         <button
+  onClick={() => setShowPrivateCodePopup(true)}
+  className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors font-medium text-sm border ${
+    isDarkMode 
+      ? 'bg-zinc-800 hover:bg-zinc-700 text-white border-zinc-700/50 hover:border-zinc-600' 
+      : 'bg-gray-100 hover:bg-gray-200 text-gray-900 border-gray-200'
+  }`}
+>
+  <Github className="w-4 h-4" />
+  <span>Code</span>
+</button>
+
             
             {project.demo && (
               <a
@@ -233,9 +234,9 @@ export default function ProjectCard({ project, isDarkMode }) {
               </button>
             )}
 
-            {project.review && (
+            {/* {project.review && (
               <button
-                onClick={() => setIsReviewModalOpen(true)}
+                // onClick={() => setIsReviewModalOpen(true)}
                 className={`flex items-center gap-2 px-4 py-2.5 rounded-lg transition-colors font-medium text-sm border ${
                   isDarkMode 
                     ? 'bg-yellow-600/10 hover:bg-yellow-600/20 text-yellow-400 border-yellow-600/30' 
@@ -245,7 +246,7 @@ export default function ProjectCard({ project, isDarkMode }) {
                 <Star className="w-4 h-4" />
                 <span>Client Review</span>
               </button>
-            )}
+            )} */}
           </div>
         </div>
       </div>
@@ -271,6 +272,12 @@ export default function ProjectCard({ project, isDarkMode }) {
         images={project.images}
         initialIndex={lightboxIndex}
       />
+      <PrivateCodePopup
+  isOpen={showPrivateCodePopup}
+  onClose={() => setShowPrivateCodePopup(false)}
+  isDarkMode={isDarkMode}
+/>
     </>
   );
+  
 }
