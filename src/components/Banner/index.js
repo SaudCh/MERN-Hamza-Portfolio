@@ -27,8 +27,7 @@ const Banner = forwardRef(({}, ref) => {
 
             {/* Subtitle */}
             <p className="text-lg lg:text-xl font-light text-white/60 leading-relaxed mb-12 max-w-lg animate-fade-in-delay-3">
-              Crafting exceptional digital experiences through elegant code and
-              thoughtful design.
+          Building high-performance web applications with Next.js, combining elegant code and thoughtful design.
             </p>
 
             {/* CTA Buttons */}
