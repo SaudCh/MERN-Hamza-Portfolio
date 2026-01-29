@@ -66,14 +66,14 @@ export default function ProjectsWithSwiper() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <section id="projects" className={`min-h-screen py-24 px-6 ${isDarkMode ? 'bg-black' : 'bg-gray-50'}`}>
+    <section id="projects" className={`min-h-screen py-24 px-6 ${isDarkMode ? 'bg-black' : ''}`}>
       <div className="container mx-auto px-6 lg:px-16">
         
         <header className="flex justify-between mb-16">
-          <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+          <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-white'}`}>
             Featured Projects
           </h2>
- <button
+ {/* <button
             onClick={() => setIsDarkMode(!isDarkMode)}
                 className={`flex items-center gap-2 px-4 py-3 rounded-xl transition-all border ${
                   isDarkMode 
@@ -93,7 +93,7 @@ export default function ProjectsWithSwiper() {
                     <span className="font-medium">Dark</span>
                   </>
                 )}
-          </button>
+          </button> */}
         </header>
 
         <ProjectsGrid isDarkMode={isDarkMode} />

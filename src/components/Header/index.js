@@ -1,98 +1,71 @@
 import { useState, useEffect } from 'react';
 
-const Header = ({ bannerRef }) => {
-  const [scrollHeight, setScrollHeight] = useState(0);
-
-  const handleScroll = () => {
-    setScrollHeight(window.scrollY);
-  };
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
     };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed top-0 z-20 w-full bg-gradient-to-b backdrop-blur-sm  ${
-        scrollHeight > bannerRef?.current?.clientHeight
-          ? 'from-gray-100/30 to-gray-100/0 text-gray-900'
-          : 'from-gray-900/30 to-gray-900/0 text-gray-100'
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#1a1a1a]/80 backdrop-blur-lg border-b border-[#d4a574]/10'
+          : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto flex items-center justify-center p-2 sm:p-6 md:justify-between">
-        <a href="#">
-          <h2 className="text-2xl font-bold">
-            <span className="text-secondary">Port</span>
-            <span className="text-primary">folio</span>
-          </h2>
-        </a>
-        <nav className="hidden font-bold md:block ">
-          <ul className="flex gap-6">
-            <li>
-              <a
-                href="#"
-                className={`transition ${
-                  scrollHeight > bannerRef?.current?.clientHeight
-                    ? 'text-gray-700 hover:text-gray-900'
-                    : 'text-gray-300 hover:text-gray-100'
-                }`}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className={`transition ${
-                  scrollHeight > bannerRef?.current?.clientHeight
-                    ? 'text-gray-700 hover:text-gray-900'
-                    : 'text-gray-300 hover:text-gray-100'
-                }`}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className={`transition ${
-                  scrollHeight > bannerRef?.current?.clientHeight
-                    ? 'text-gray-700 hover:text-gray-900'
-                    : 'text-gray-300 hover:text-gray-100'
-                }`}
-              >
-                Projects
-              </a>
-            </li>
-            {/* <li>
-              <a href="#" className={`transition ${
-                  scrollHeight > bannerRef?.current?.clientHeight
-                    ? 'text-gray-700 hover:text-gray-900'
-                    : 'text-gray-300 hover:text-gray-100'
-                }`}>
-                Skills
-              </a>
-            </li> */}
-            <li>
-              <a
-                href="#contact"
-                className={`transition ${
-                  scrollHeight > bannerRef?.current?.clientHeight
-                    ? 'text-gray-700 hover:text-gray-900'
-                    : 'text-gray-300 hover:text-gray-100'
-                }`}
-              >
-                Contact
-              </a>
-            </li>
+      <nav className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <a
+            href="#home"
+            className="font-playfair text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity"
+          >
+            Port<span className="text-[#d4a574]">folio</span>
+          </a>
+
+          {/* Navigation Links */}
+          <ul className="hidden md:flex items-center gap-12">
+            {['Home', 'About', 'Projects', 'Contact'].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="relative text-sm font-work tracking-wider text-white/90 hover:text-[#d4a574] transition-colors duration-300 group"
+                >
+                  {item}
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#d4a574] transition-all duration-300 group-hover:w-full" />
+                </a>
+              </li>
+            ))}
           </ul>
-        </nav>{' '}
-      </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-white/90 hover:text-[#d4a574] transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
     </header>
   );
-};
-
-export default Header;
+}

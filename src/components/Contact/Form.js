@@ -21,7 +21,7 @@ const Form = () => {
       />
       <button
         type="submit"
-        className="bg-primary rounded-lg px-3 py-2 text-lg font-bold text-white disabled:opacity-50"
+        className="bg-[#d4a574] rounded-lg px-3 py-2 text-lg font-bold text-white disabled:opacity-50"
         disabled
       >
         Send Email
