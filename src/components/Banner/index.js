@@ -4,7 +4,7 @@ import ArrowDownIcon from '../icons/ArrowDownIcon';
 
 const Banner = forwardRef(({}, ref) => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d]">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#1a1a1a] to-[#2d2d2d]">
       {/* Decorative Background Elements */}
       <div className="absolute top-[-50%] right-[-20%] w-[800px] h-[800px] bg-[#d4a574]/8 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-[-30%] left-[-10%] w-[600px] h-[600px] bg-[#d4a574]/5 rounded-full blur-3xl animate-float-reverse" />
