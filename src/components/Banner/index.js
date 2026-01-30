@@ -9,7 +9,7 @@ const Banner = forwardRef(({}, ref) => {
       <div className="absolute top-[-50%] right-[-20%] w-[800px] h-[800px] bg-[#d4a574]/8 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-[-30%] left-[-10%] w-[600px] h-[600px] bg-[#d4a574]/5 rounded-full blur-3xl animate-float-reverse" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 py-24">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Hero Content */}
           <div className="animate-slide-in-left">
@@ -81,7 +81,7 @@ const Banner = forwardRef(({}, ref) => {
         </div>
 
         {/* Stats */}
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 mt-20 lg:mt-20 animate-fade-in-delay-5">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 mt-20 lg:mt-14 animate-fade-in-delay-5">
           <div className="text-center sm:text-left">
             <div className="font-playfair text-5xl font-bold text-[#d4a574] leading-none mb-2">
               2+
