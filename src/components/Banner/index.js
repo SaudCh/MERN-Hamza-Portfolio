@@ -16,7 +16,7 @@ const Banner = forwardRef(({}, ref) => {
             {/* Label */}
             <div className="inline-flex items-center gap-3 text-[#d4a574] text-sm font-medium tracking-[0.15em] uppercase mb-8 animate-fade-in-delay-1">
               <span className="w-10 h-[1px] bg-[#d4a574]" />
-              <span>Developer & Designer</span>
+              <span>Web Developer & Business Developer</span>
             </div>
 
             {/* Heading */}
