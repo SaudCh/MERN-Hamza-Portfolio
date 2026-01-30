@@ -20,7 +20,7 @@ const Contact = () => {
           requirements.
         </p>
 
-        <div className="mt-6 space-y-3 px-0 sm:px-6">
+        <div className="mt-6 space-y-3 px-0 ">
           <div className="flex items-center gap-3">
             <UserIcon className="text-[#d4a574] h-7 w-7" />
             <p className="text-lg text-white">Hamza Shahbaz</p>
