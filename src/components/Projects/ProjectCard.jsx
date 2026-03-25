@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Github,
   ExternalLink,
@@ -22,6 +23,7 @@ import ReviewModal from "./modals/ReviewModal";
 import { PrivateCodePopup } from "./Popup";
 
 export default function ProjectCard({ project, isDarkMode }) {
+  const navigate = useNavigate();
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
@@ -226,6 +228,13 @@ export default function ProjectCard({ project, isDarkMode }) {
             >
               <Github className="h-4 w-4" />
               <span>Code</span>
+            </button>
+
+            <button
+              onClick={() => navigate(`/checkout?projectId=${project.id}`)}
+              className="flex items-center gap-2 rounded-lg bg-[#cfa97d] px-4 py-2.5 text-sm font-medium text-zinc-900 transition-all hover:bg-[#b8926d]"
+            >
+              <span>Get a Quote</span>
             </button>
 
             {project.demo && (
