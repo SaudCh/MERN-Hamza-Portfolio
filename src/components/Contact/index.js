@@ -1,16 +1,16 @@
-import LocationIcon from '../icons/LocationIcon';
-import MailIcon from '../icons/MailIcon';
-import UserIcon from '../icons/UserIcon';
-import PhoneIcon from '../icons/PhoneIcon';
-import Form from './Form';
+import LocationIcon from "../icons/LocationIcon";
+import MailIcon from "../icons/MailIcon";
+import UserIcon from "../icons/UserIcon";
+import PhoneIcon from "../icons/PhoneIcon";
+import Form from "./Form";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="container mx-auto my-12 grid grid-cols-1 gap-8 py-6 px-8 sm:px-12 lg:grid-cols-2"
+      className="container mx-auto my-12 grid grid-cols-1 gap-8 px-8 py-6 sm:px-12 lg:grid-cols-2"
     >
-      <h3 className="text-[#d4a574] order-1 text-center  text-xl font-bold lg:col-span-2">
+      <h3 className="order-1 text-center text-xl  font-bold text-[#d4a574] lg:col-span-2">
         Get in Touch
       </h3>
       <div className="order-3 lg:order-2">
@@ -22,20 +22,20 @@ const Contact = () => {
 
         <div className="mt-6 space-y-3 px-0 ">
           <div className="flex items-center gap-3">
-            <UserIcon className="text-[#d4a574] h-7 w-7" />
+            <UserIcon className="h-7 w-7 text-[#d4a574]" />
             <p className="text-lg text-white">Hamza Shahbaz</p>
           </div>
           <div className="flex items-center gap-3">
-            <LocationIcon className="text-[#d4a574] h-7 w-7" />
-            <p className="text-lg text-white">Lahore, Pakistan</p>
+            <LocationIcon className="h-7 w-7 text-[#d4a574]" />
+            <p className="text-lg text-white">United Kingdom</p>
           </div>
           <div className="flex items-center gap-3">
-            <MailIcon className="text-[#d4a574] h-7 w-7" />
+            <MailIcon className="h-7 w-7 text-[#d4a574]" />
             <p className="text-lg text-white">hamzashahbaz1947@gmail.com</p>
           </div>
-             <div className="flex items-center gap-3">
-            <PhoneIcon className="text-[#d4a574] h-7 w-7" />
-            <p className="text-lg text-white">03068398888</p>
+          <div className="flex items-center gap-3">
+            <PhoneIcon className="h-7 w-7 text-[#d4a574]" />
+            <p className="text-lg text-white">+447857082420</p>
           </div>
         </div>
       </div>
